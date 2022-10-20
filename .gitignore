@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Excluimos nuestra archivo index.html
-.index.html
+# Excluimos la configuración de nuestro firebase
+src/firebase
