@@ -1,6 +1,5 @@
 import { StarOutline } from "@mui/icons-material"
 import { Grid, Typography } from "@mui/material"
-import { borderRadius } from "@mui/system"
 
 export const NothingSelectedView = () => {
     return (

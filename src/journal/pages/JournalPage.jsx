@@ -1,5 +1,6 @@
 import { JournalLayout } from "../";
-import { NothingSelectedView } from "../";
+import { NothingSelectedView,
+         NotView } from "../";
 
 const drawerWith = 240;
 
@@ -8,8 +9,9 @@ export const JournalPage = () => {
     <>
         <JournalLayout component='h1'>
           {/* NothingSelected */}
-          <NothingSelectedView/>
+          {/* <NothingSelectedView/> */}
           {/* NoteView */}
+          <NotView/>
         </JournalLayout>
     </>
   )
