@@ -34,7 +34,8 @@ export const startLoginWitEmailAndPassword = ({email, password}) => {
         dispatch(checkingCredentials());
         const result = await loginWithEmailAndPassword({email, password});
         if(!result.ok) return dispatch(logout(result));
-        console.log(result);
-        dispatch(login(result));
+        console.log(result)
+        const {user} = result.resp;
+        dispatch(login(user));
     }
 }
