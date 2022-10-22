@@ -22,8 +22,8 @@ export const LoginPage = () => {
 
   const onSubmit = (ev) => {
     ev.preventDefault();
-    dispatch(checkingAuthentication(email, password));
-    console.log({email, password});
+    // !No es la accion a disparar
+    // dispatch(checkingAuthentication(email, password));
   }
 
   const onGoogleSignIn = () => {
