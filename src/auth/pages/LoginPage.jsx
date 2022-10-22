@@ -5,7 +5,7 @@ import { AuthLayout } from "../layout"
 
 import { useForm } from "../../hooks/useForm"
 import { useDispatch, useSelector } from "react-redux"
-import { checkingAuthentication, startGoogleSignIn } from "../../store/auth"
+import { checkingAuthentication, startGoogleSignIn, startLoginWitEmailAndPassword } from "../../store/auth"
 import { useMemo } from "react"
 
 export const LoginPage = () => {
@@ -16,14 +16,13 @@ export const LoginPage = () => {
   const isAuthenticating = useMemo(() => status === 'checking', [status]);
 
   const { email, password, onInputChange } = useForm({
-    email: 'elhazael134@gmail.com',
+    email: 'azucenaherrera28@gmail.com',
     password: '123456'
   });
 
   const onSubmit = (ev) => {
     ev.preventDefault();
-    // !No es la accion a disparar
-    // dispatch(checkingAuthentication(email, password));
+    dispatch(startLoginWitEmailAndPassword({email, password}));
   }
 
   const onGoogleSignIn = () => {
