@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Excluimos la configuración de nuestro firebase
-src/firebase
+src/firebase/config.js
