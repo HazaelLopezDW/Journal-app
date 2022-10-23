@@ -9,6 +9,7 @@ export const NotView = () => {
         direction="row"
         justifyContent="space-between"
         sx={{ mb: 1}}
+        className="animate__animated fadeIn animate__faster"
     >
         <Grid item>
             <Typography fontSize={39} fontWeight="light">
