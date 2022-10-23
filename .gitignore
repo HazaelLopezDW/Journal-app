@@ -25,3 +25,6 @@ dist-ssr
 
 # Excluimos la configuración de nuestro firebase
 src/firebase/config.js
+
+# Variables de entorno
+.env
