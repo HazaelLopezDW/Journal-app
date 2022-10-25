@@ -14,6 +14,12 @@ import { startGoogleSignIn,
          startLoginWitEmailAndPassword } from "../../store/auth"
 import { useMemo } from "react"
 
+
+const formData = {
+  email: '',
+  password: ''
+}
+
 export const LoginPage = () => {
 
   const {status, errorMessage} = useSelector(state => state.auth);
@@ -21,10 +27,7 @@ export const LoginPage = () => {
 
   const isAuthenticating = useMemo(() => status === 'checking', [status]);
 
-  const { email, password, onInputChange } = useForm({
-    email: '',
-    password: ''
-  });
+  const { email, password, onInputChange } = useForm(formData);
 
   const onSubmit = (ev) => {
     ev.preventDefault();
