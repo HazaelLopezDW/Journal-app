@@ -104,7 +104,9 @@ export const NotView = () => {
                 />
             </Grid>
             {/* Image gallery */}
-            <ImageGallery />
+            <ImageGallery 
+                images={note.imageUrls}
+            />
         </Grid>
     )
 }
